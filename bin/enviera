@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'enviera/CLI'
+
+begin
+  Enviera::CLI.parse
+rescue StandardError => e
+  Enviera::Utils.warn e.message
+  Enviera::Utils.debug e.backtrace.join("\n")
+  exit 1
+end
+
+begin
+  Enviera::CLI.execute
+rescue StandardError => e
+  Enviera::Utils.warn e.message
+  Enviera::Utils.debug e.backtrace.join("\n")
+  exit 1
+end
