@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.email         = "development@pureinsomnia.com"
   gem.license       = "MIT"
 
-  gem.homepage      = "http://github.com/josh.souza/enviera"
+  gem.homepage      = "http://github.com/joshsouza/enviera"
   gem.files         = `git ls-files`.split($/).reject { |file| file =~ /^features.*$/ }
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
