@@ -87,7 +87,7 @@ module Enviera
             end
           }
         end
-        keys = keys.sort.to_h
+        keys = Hash[ keys.sort{ |v0, v1| v0[0] <=> v1[0] } ]
         case Enviera::Options[:output]
         when "block"
           keys
