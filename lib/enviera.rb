@@ -1,5 +1,5 @@
 module Enviera
-  VERSION = "0.0.2"
+  VERSION = "0.0.3"
   DESCRIPTION = "Enviera is a tool for looking up all Hiera values available based on a given set of puppet facts"
 
   class RecoverableError < StandardError

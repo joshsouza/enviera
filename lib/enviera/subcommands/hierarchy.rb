@@ -66,6 +66,7 @@ module Enviera
         hiera= Hiera.new(:config=>hiera_config)
         sources = []
         hiera.config[:backends].each do |backend|
+          sources.push("backend: "+backend)
           Hiera::Backend.datasources(environment) { |source|
             # Presently I'm only handling 'yaml' extensions. I hope someday this works for other stuff
             # But I haven't figured out a smart way to do this with the tools available
