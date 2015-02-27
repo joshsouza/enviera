@@ -101,7 +101,14 @@ If you have found a bug then please raise an issue on the github page.
 Tests
 -----
 
-I don't have any yet. I'm very new to the Ruby gem concept, but should get something eventually
+In order to run the tests, simply run cucumber in the top level directory of the project.
+
+You'll need to have a few requirements installed:
+
+expect (via yum/apt-get or system package)
+aruba (gem)
+cucumber (gem)
+hiera (gem)
 
 Kudos
 -----
