@@ -16,6 +16,12 @@ module Enviera
        {:name          => :verbose,
           :description => "Be more verbose",
           :short       => 'v'},
+       {:name          => :trace,
+          :description => "Enable trace debug",
+          :short       => 't'},
+       {:name          => :quiet,
+          :description => "Be less verbose",
+          :short       => 'q'},
        {:name          => :help,
           :description => "Information on how to use this command",
           :short       => 'h'}
@@ -97,6 +103,10 @@ module Enviera
 
       if options[:verbose]
         Enviera.verbosity_level += 1
+      end
+
+      if options[:trace]
+        Enviera.verbosity_level += 2
       end
 
       if options[:quiet]
