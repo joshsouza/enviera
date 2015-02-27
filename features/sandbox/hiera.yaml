@@ -4,6 +4,6 @@
 :yaml:
   :datadir: ./hieradata
 :hierarchy:
-  - %{fqdn}
-  - %{environment}
+  - "%{fqdn}"
+  - "%{environment}"
   - common

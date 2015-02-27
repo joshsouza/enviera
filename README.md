@@ -1,6 +1,8 @@
 Enviera
 ===========
 
+[![Build Status](https://travis-ci.org/joshsouza/enviera.svg?branch=master)](https://travis-ci.org/joshsouza/enviera)
+
 Enviera is a tool to go along with Puppet and Hiera that will allow you to see
 all of the variables defined within Hiera for a particular environment
 (or for Puppet, a set of facts)
